@@ -108,14 +108,14 @@ class FeelingTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      foregroundDecoration: value == null ? BoxDecoration(color: Colors.white.withOpacity(0.6)) : null,
+      foregroundDecoration: value == null ? BoxDecoration(color: Theme.of(context).scaffoldBackgroundColor.withOpacity(0.6)) : null,
       child: Column(
         children: [
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 7.5),
             decoration: BoxDecoration(
               color: HexColor('#F1F2F3'),
-              boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.1), offset: const Offset(4,4), blurRadius: 8)],
+              boxShadow: value == null ? null : [BoxShadow(color: Colors.black.withOpacity(0.1), offset: const Offset(4,4), blurRadius: 8)],
               borderRadius: BorderRadius.circular(70),
             ),
             child: Column(
