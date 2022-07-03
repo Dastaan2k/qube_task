@@ -1,4 +1,3 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 enum FeelingTypeEnum {
   energetic, sad, happy, angry, calm, bored, love
 }
