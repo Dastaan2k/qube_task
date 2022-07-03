@@ -107,8 +107,8 @@ class FeelingTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      foregroundDecoration: value == null ? BoxDecoration(color: Theme.of(context).scaffoldBackgroundColor.withOpacity(0.6)) : null,
+    return Opacity(
+      opacity: value == null ? 0.4 : 1,
       child: Column(
         children: [
           Container(
